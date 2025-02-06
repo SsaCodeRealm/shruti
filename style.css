@@ -5,7 +5,7 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #53efbe , #3b94ef);
+    /* background: linear-gradient(to right, #53efbe , #3b94ef); */
 }
 
 h1{
@@ -379,3 +379,20 @@ p{
     background-color: #ff85c0;
   }
   
+/* Background video styles */
+#bgVideo {
+    position: fixed; /* Stays fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;    /* Full width */
+    height: 100%;   /* Full height */
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1;    /* Places video behind other content */
+  }
+  
+  /* Content container styling (if needed) */
+  .content {
+    position: relative; /* Ensures content is above the video */
+    z-index: 1;
+    /* Other content styling */
+  }
