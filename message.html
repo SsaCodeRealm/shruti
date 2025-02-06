@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>saro-rosy ❤️</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="mess_style.css">
+  <style>
+    /* Background video styling */
+    #bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Container for centering the message content */
+    .message-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      pointer-events: none; /* Allow draggables to receive events if needed */
+    }
+
+    /* Allow individual papers to be draggable (they should still receive pointer events) */
+    .message-container .paper {
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Background Audio -->
+  <audio autoplay loop id="backgroundAudio">
+    <source src="Chahoon Mai Ya Na.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Message Container (centers your content) -->
+  <div class="message-container">
+    <!-- Developed by Saravanan  -->
+    <div class="paper heart"></div>
+    
+    <div class="paper image">
+      <p></p>
+      <img src="image.png" alt="Image 2" />
+    </div>
+
+    <div class="paper image">
+      <p>You happily stay in my life</p>
+      <p>as Whatever Relations🤝</p>
+      <p>You are priceless blessing in my life✨</p>
+    </div>
+
+    <div class="paper image">
+      <p>Tum paas raho ya na raho</p>
+      <p>Mera dhyaan😇 Hamesa Tumhi Par rehta</p>
+      <p>Mujhe nahi pata mai Kya Karu</p>
+      <p>Mai Bas kosis kar rha hu Ki</p>
+    </div>
+
+    <div class="paper image">
+      <p>Tum haste mushkurate hue bahaut hi pyaari🥰 lagti ho</p>
+      <p>Even rose's beauty fades before your bright smile✨</p>
+      <p>Mai khud nahi bata sakta kitna achha😊 lagta hai</p>
+      <p>tumhe haste mushkurate dekh kar</p>
+    </div>
+    <div class="paper">
+      <p class="p1">You are so cute </p>
+      <p class="p1">and amazing <span style="color: red !important;">❤️</span></p>
+    </div>
+    <div class="paper">
+      <p class="p1">Drag the papers to move!</p>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

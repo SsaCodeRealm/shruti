@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Hey Hey ✨</title>
+  <link rel="icon" type="img/jpg" href="https://c4.wallpaperflare.com/wallpaper/812/187/770/kimi-no-na-wa-tachibana-taki-miyamizu-mitsuha-anime-wallpaper-preview.jpg" />
+  <style>
+    /* Position the button at the bottom center of the page */
+    #nextButton {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none; /* Hidden initially */
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="rose">
+    <!-- Example petal elements -->
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <!-- The text that appears on the rose -->
+    <div class="text">
+      <span>Happy Rose Day Shruti✨</span>
+    </div>
+  </div>
+  <span id="prompt">Touch the rose</span>
+
+  <!-- Button positioned at the bottom center -->
+  
+  <a href="message.html">
+    <button id="nextButton" >Click To See Message</button>
+  </a>
+
+  <div style="display: none;">
+    <audio autoplay loop controls>
+      <source src="Chahoon Mai Ya Na.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+  
+
+  <script>
+    // When the rose is touched (clicked), display the button after a short delay.
+    document.querySelector('.rose').addEventListener('click', function () {
+      setTimeout(function () {
+        document.getElementById('nextButton').style.display = 'block';
+      }, 1000); // Adjust the delay if necessary
+    });
+  </script>
+</body>
+</html>
